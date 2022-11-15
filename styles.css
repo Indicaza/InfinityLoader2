@@ -1,0 +1,35 @@
+svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.path {
+    stroke-dasharray: 200;
+    stroke-dashoffset: 1000;
+    animation: dash 8s linear forwards;
+    animation-iteration-count: infinite;
+    /*fill: url(#LinearGradient);*/
+    /*fill-rule: evenodd;*/
+    opacity: 1;
+    stroke: url(#LinearGradient);
+    stroke-width: 3.5;
+}
+
+@keyframes dash {
+    to {
+        stroke-dashoffset: 0;
+    }
+}
+
+/*path {*/
+/*    stroke: #BBB;*/
+/*    fill: none;*/
+/*    !*stroke-width: 8;*!*/
+/*    stroke-linecap: round;*/
+/*}*/
+
+/*.infinity {*/
+/*    stroke: #000;*/
+/*}*/
